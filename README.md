@@ -2,10 +2,6 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/26028302-102b-43b4-a3ac-b6797200f2a8/deploy-status)](https://app.netlify.com/sites/tedxbitbangalore/deploys)
 
-## [TEDXBITBANGALORE.COM](https://tedxbitbangalore.com)
-[![TEDxBITBangalore Website](https://github.com/EffDuBois/Resources/blob/main/Images/tedx%20website.png?raw=true)](https://tedxbitbangalore.com)
-
-
 This is the source code for the official website of TEDx BIT Bangalore, an annual TEDx event held at Bangalore Institute of Technology. The website is built with React and Tailwind, and hosted on Netlify.
 
 ## Features
@@ -27,7 +23,7 @@ To run this project locally, you need to have Node.js and npm installed on your 
 
 ## Deployment
 
-This project is deployed on Netlify using continuous integration. Any changes pushed to the master branch will trigger a new build and deployment. You can also manually deploy the project using the Netlify CLI:
+This project is deployed on Netlify using continuous integration. Any changes pushed to the `main` branch will trigger a new build and deployment. You can also manually deploy the project using the Netlify CLI:
 
 1. Install the Netlify CLI: `npm install -g netlify-cli`
 2. Login to your Netlify account: `netlify login`
