@@ -4,6 +4,8 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
+// import logoWhite from "../../resources/images/logos/tedx/logo-TEDxBITBangalore_white.webp";
+
 const Navbar = () => {
   return (
     <header class="flex flex-wrap lg:justify-start lg:flex-nowrap z-50 w-full bg-main text-lg lg:py-0 sticky top-0 h-[14vh]">
@@ -16,8 +18,9 @@ const Navbar = () => {
             <TEDxLogo />
           </div> */}
           <Link className="flex-none" to="/">
+            {/* <img src={logoWhite} alt="TEDxBITBangalore logo" /> */}
             <h1 className="text-xls lg:text-4xl">
-              <span className="text-ted">
+              <span className="text-ted font-extrabold">
                 TED<sup>x</sup>
               </span>
               BITBangalore
@@ -53,7 +56,7 @@ const Navbar = () => {
         >
           <div class="flex flex-col lg:h-full gap-x-0 lg:flex-row lg:items-stretch lg:justify-end lg:gap-y-0 lg:mt-0 lg:pl-7 ">
             <NavbarButton to="/home">Home</NavbarButton>
-            <NavbarButton to="/event">Event</NavbarButton>
+            <NavbarButton to="/events">Events</NavbarButton>
             <NavbarButton to="/team">Team</NavbarButton>
             <NavbarButton to="/about">About</NavbarButton>
             <NavbarButton to="/register">Register</NavbarButton>

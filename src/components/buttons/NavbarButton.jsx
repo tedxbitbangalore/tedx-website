@@ -6,8 +6,8 @@ const NavbarButton = (props) => {
   return (
     <Link
       to={props.to}
-      className={`hs-collapse-toggle lg:hover:bg-invert lg:hover:text-invert ${
-        path === props.to ? "lg:bg-invert lg:text-invert bg-main text-main" : ""
+      className={`hs-collapse-toggle lg:hover:text-ted transition-colors ${
+        path === props.to ? "lg:text-ted bg-main text-main" : ""
       } flex justify-center items-center lg:px-4 max-md:h-[6vh]`}
     >
       <p className="text-center leading-5">{props.children}</p>

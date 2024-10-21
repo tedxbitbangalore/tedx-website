@@ -1,101 +1,139 @@
 import React from "react";
-//images
+//imports
+import { Link } from "react-router-dom";
+
+//custom components
+import PeopleTray from "../trays/PeopleTray";
+import Counter from "../counters/Counter";
+//icons
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCalendar, faLocationDot } from "@fortawesome/free-solid-svg-icons";
+//videos and images
 import logobg from "../../resources/images/logos/insightx/logo-insightx-nobg.webp";
+// import videobg from "../../resources/videos/insightx-scaled-down.mp4";
+import sponsorImages from "../../resources/images/sponsors/getSponsorImages";
+import speakerImages from "../../resources/images/speakers/getSpeakerImages";
 
-const HomePage = () => {
+const EventsPage = () => {
   return (
-    <div className="">
-      {/* Banner Start */}
-      <section className=" lg:border-b-4 border-white flex flex-col">
-        <div className=" h-[80vh] lg:h-[75vh] items-center mx-4 lg:mx-32 flex lg:mb-14">
-          <img
-            className=""
-            src={logobg}
-            alt="insightx logo"
-            width={1500}
-            height={182}
-          />
+    <div>
+      <section className=" flex flex-col">
+        <div className=" w-full h-screen lg:w-full items-center flex radial-bg-red-black">
+          <div className="lg:order-1 lg:pb-20 text-center items-center mx-auto">
+            <p className="text-center text-3xl mb-16">UPCOMING</p>
+            <img
+              src={logobg}
+              alt="Insightx logo"
+              className="w-[80vw] mb-16"
+              width={640}
+              height={100}
+            />
+            <Link to={"/register"} className="mt-16 text-4xl">
+              <u>Buy Tickets Now!</u>
+            </Link>
+          </div>
         </div>
-
-        {/* <p className="text-center text-normal [font-stretch:normal]">
-          Scroll
-        </p> */}
-        {/* <FontAwesomeIcon
-          className="m-2 h-[2rem]"
-          icon={faChevronDown}
-          style={{ color: "white" }}
-        /> */}
-      </section>
-      {/* Banner End */}
-
-      {/*Content Start  */}
-      <div className="mt-20 ml-gutter mr-[6vw] lg:mx-gutterbig">
-        {/* What is TEDX Start */}
-        <section className="lg:grid lg:grid-cols-2 lg:gap-x-[5vw] lg:items-center my-12">
-          <h1 className="lg:text-left lg:my-0 lg:order-1 lg:mb-16">
-            What <span className="lg:text-5xl">is</span>
-            <br />
-            <span className="text-ted underline lg:text-8xl text-6xls">
-              <a href="https://www.ted.com/tedx">TEDx</a>
-            </span>
-            ?
-          </h1>
-          <p className="">
-            In the spirit of ideas worth spreading, TED has created a program
-            called <span className="text-ted">TEDx</span>.{" "}
-            <span className="text-ted">TEDx </span> is a program of local,
-            self-organized events that bring people together to share a TED-like
-            experience. Our event is called TEDxBitBangalore, where
-            <br />
-            <span className="text-ted">x</span> = independently organized TED
-            event. At our <span className="text-ted">TEDxBitBangalore</span>{" "}
-            event INSIGHTX, TED Talks video and live speakers will combine to
-            spark deep discussion and connection in a small group. The TED
-            Conference provides general guidance for the{" "}
-            <span className="text-ted">TEDx </span> program, but individual{" "}
-            <span className="text-ted">TEDx </span> events, including ours, are
-            self-organized.
-          </p>
-        </section>
-        {/* What is TEDX End */}
-        {/* About Start */}
-        <section className="lg:grid lg:grid-cols-2 lg:gap-x-[5vw] my-12">
-          <h1 className="lg:text-left lg:my-0 lg:order-1 ">
-            About
-            <br />
-            <span className="text-ted">
-              TEDx
-              <br />
-              <span className="lg:text-5xl text-4.5xls">BITBangalore</span>
-            </span>
-          </h1>
-          <p className="">
-            <span className="text-ted">TEDxBITBangalore </span> is a channel to
-            propagate ideas globally through a local platform. We hold a{" "}
-            <u>university-level license</u> from TED to organise an independent
-            <span className="text-ted">
-              <sup>x</sup>
-            </span>{" "}
-            TED event to effectuate the same. It was initiated by a humble group
-            of young visionaries dedicated to bringing together{" "}
-            <i>ideas worth spreading</i>.
-          </p>
-        </section>
-        {/* About End */}
-        {/* Location Start */}
-        {/* <div className=" my-20 ">
-          <img
-            className="hover:opacity-50 w-full"
-            src={img_bit}
-            alt="pic of bangalore city"
-          />
+        {/* <div className="justify-center flex">
+          <a
+            href={
+              "https://docs.google.com/forms/d/1woMBHckOJqNbIuXqa2UiJD4Q_6M5EKs0cGco6IJm-fM/edit"
+            }
+            rel="noreferrer"
+            target="_blank"
+            className="lg:m-5 lg:text-2xl "
+          >
+            <u>BUY TICKETS NOW!</u>
+          </a> 
         </div> */}
-        {/* Location End */}
-        
+      </section>
+      {/* End Main Section */}
+
+      {/* Start About Section */}
+      <section className="mx-gutter lg:mx-gutterbig mb-12 mt-0">
+        <div className="lg:gap-x-[5vw] lg:mb-12 lg:mt-0 lg:items-center">
+          <p className="mt-0 text-center">
+            “Cosmos” unfolds the universe one creates for oneself. When there is
+            no predefined purpose or meaning, the significance we attribute to
+            our lives moulds itself, much like water taking the shape of its
+            container. Purpose, existence, and meaning become what individuals
+            craft for themselves. We are what we choose to be. Our cosmos is the
+            reality that we create and live towards, the meaning we provide, and
+            what we ultimately wish to experience during our time here. We are
+            the architects, it is our theory that shapes our cosmos.
+          </p>
+        </div>
+      </section>
+      <div className="mx-auto mb-16">
+        <Counter date="11/23/2024" />
       </div>
-      {/*Content End  */}
+      {/* End About Section */}
+
+      {/* Start Speaker Section */}
+      <section>
+        <PeopleTray imageArray={speakerImages} firstText="" secondText="">
+          <h2 className="text-center text-ted">
+            <span className="text-4xls lg:text-4xl text-main">The</span>
+            <br /> Speakers
+          </h2>
+        </PeopleTray>
+      </section>
+      {/* End Speaker Section */}
+
+      {/* Start Date and Venue Section */}
+      <section className="flex flex-col lg:flex-row w-full justify-evenly">
+        <div className="flex flex-col content-center item-center m-3">
+          <FontAwesomeIcon
+            icon={faCalendar}
+            size="2xl"
+            style={{ color: "#ff1414" }}
+          />
+          <p className="text-center"> November 23, 2024</p>
+          <p className="text-center"> 8:00 AM onwards</p>
+        </div>
+        <div className="flex flex-col content-center item-center mt-4">
+          <FontAwesomeIcon
+            icon={faLocationDot}
+            size="2xl"
+            style={{ color: "#ff1414" }}
+          />
+          <p className="text-center"> Bangalore Institute of Technology,</p>
+          <p className="text-center">KR Road, VV Puram, Bangalore - 560094</p>
+        </div>
+      </section>
+      {/* End Date and Venue Section */}
+
+      {/* Start Slider Section */}
+      <section class="w-full my-10">
+        <h1 className="text-center">
+          Our <span className="text-ted ">Sponsors</span>
+        </h1>
+        <div className="p-0 mx-16 px-0">
+          <div className="py-10 flex h-[35vh]">
+            {sponsorImages.map((img, index) => {
+              return (
+                <img
+                  className="w-full"
+                  width={480}
+                  height={200}
+                  key={index}
+                  src={img.path}
+                  alt={img.name}
+                />
+              );
+            })}
+          </div>
+        </div>
+      </section>
+      {/* End Slider Section */}
+      {/* <div className="h-52 flex justify-center item-center flex flex-col">
+        <p className="text-center lg:text-5xl text-3xls">
+          Find us <span className="text-ted">At</span>
+        </p>
+        <p className="text-center"> Bangalore Institute of Technology,</p>
+        <p className="text-center">KR Road, VV Puram, Bangalore - 560094</p>
+      </div> */}
     </div>
   );
 };
 
-export default HomePage;
+export default EventsPage;

@@ -12,7 +12,7 @@ const Counter = (props) => {
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
         minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60),
+        // seconds: Math.floor((difference / 1000) % 60),
       };
     }
 
@@ -44,8 +44,12 @@ const Counter = (props) => {
   });
 
   return (
-    <p className="lg:text-2xl text-1xls self-center">
-      {timerComponents.length ? timerComponents : <span>Event's Here!</span>}
+    <p className="lg:text-3xl text-1xls text-ted text-center">
+      {timerComponents.length ? (
+        <> {timerComponents} left </>
+      ) : (
+        <span>Event's Here!</span>
+      )}
     </p>
   );
 };
