@@ -215,77 +215,17 @@
       0 0 2.5em 2em var(--glow-spread-color),
       inset 0 0 0.5em 0.25em var(--glow-color);
   }
-}
 
-/* glowing button end*/
+  /* glowing button end*/
 
-/* Fonts */
-@font-face {
-  font-family: acumin-pro;
-  font-weight: 200;
-  font-stretch: normal;
-  src: url(./resources/fonts/acumin-pro-extralight-webfont.woff2)
-      format("woff2"),
-    url(./resources/fonts/acumin-pro-extralight-webfont.woff) format("woff");
-  font-display: swap;
+  .radial-bg-red-black{
+    background: radial-gradient(93.24% 93.24% at 30.76% 13.94%, #691809 0%, #240803 36.04%, #000000 100%);
+  }
 }
-@font-face {
-  font-family: acumin-pro;
-  font-weight: 300;
-  font-stretch: normal;
-  src: url(./resources/fonts/acumin-pro-light-webfont.woff2) format("woff2"),
-    url(./resources/fonts/acumin-pro-light-webfont.woff) format("woff");
-  font-display: swap;
-}
-@font-face {
-  font-family: acumin-pro;
-  font-weight: 400;
-  font-stretch: normal;
-  src: url(./resources/fonts/acumin-pro-webfont.woff2) format("woff2"),
-    url(./resources/fonts/acumin-pro-webfont.woff) format("woff");
-  font-display: swap;
-}
-@font-face {
-  font-family: acumin-pro;
-  font-weight: 800;
-  src: url(./resources/fonts/acumin-pro-black-webfont.woff2) format("woff2"),
-    url(./resources/fonts/acumin-pro-black-webfont.woff) format("woff");
-  font-display: swap;
-}
-@font-face {
-  font-family: acumin-pro;
-  font-weight: 900;
-  src: url(./resources/fonts/acumin-pro-black-webfont.woff2) format("woff2"),
-    url(./resources/fonts/acumin-pro-black-webfont.woff) format("woff");
-  font-display: swap;
-}
-@font-face {
-  font-family: acumin-pro;
-  font-weight: 800;
-  font-stretch: expanded;
-  src: url(./resources/fonts/acumin-pro-wide-black-webfont.woff2)
-      format("woff2"),
-    url(./resources/fonts/acumin-pro-wide-black-webfont.woff) format("woff");
-  font-display: swap;
-}
-/* Main Font */
-@font-face {
-  font-family: acumin-pro;
-  font-weight: 900;
-  font-stretch: expanded;
-  src: url(./resources/fonts/acumin-pro-wide-ultrablack-webfont.woff2)
-      format("woff2"),
-    url(./resources/fonts/acumin-pro-wide-ultrablack-webfont.woff)
-      format("woff");
-  font-display: swap;
-}
-/* Fonts end*/
 
 body {
   margin: 0;
-  font-family: acumin-pro, sans-serif;
-  font-weight: 900;
-  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   @apply bg-main text-main;
