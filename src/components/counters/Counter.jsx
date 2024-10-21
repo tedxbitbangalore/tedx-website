@@ -44,7 +44,7 @@ const Counter = (props) => {
   });
 
   return (
-    <p className="lg:text-3xl text-1xls text-ted text-center">
+    <p className="lg:text-3xl text-1xls text-ted text-center uppercase">
       {timerComponents.length ? (
         <> {timerComponents} left </>
       ) : (

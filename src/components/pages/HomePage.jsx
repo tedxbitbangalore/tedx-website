@@ -17,10 +17,10 @@ import speakerImages from "../../resources/images/speakers/getSpeakerImages";
 const EventsPage = () => {
   return (
     <div>
-      <section className=" flex flex-col">
-        <div className=" w-full h-screen lg:w-full items-center flex radial-bg-red-black">
+      <section className="flex flex-col">
+        <div className="w-full lg:h-screen lg:w-full items-center flex radial-bg-red-black">
           <div className="lg:order-1 lg:pb-20 text-center items-center mx-auto">
-            <p className="text-center text-3xl mb-16">UPCOMING</p>
+            <p className="text-center text-2xl mb-16">UPCOMING</p>
             <img
               src={logobg}
               alt="Insightx logo"
@@ -28,8 +28,11 @@ const EventsPage = () => {
               width={640}
               height={100}
             />
-            <Link to={"/register"} className="mt-16 text-4xl">
-              <u>Buy Tickets Now!</u>
+            <Link
+              to={"/register"}
+              className="text-xl text-white bg-ted hover:bg-red-700 focus:ring-black-300 font-medium text-sm px-5 py-2.5 dark:bg-black-600 dark:hover:bg-black-700 focus:outline-none dark:focus:ring-black-800"
+            >
+              Buy Tickets Now!
             </Link>
           </div>
         </div>
@@ -49,17 +52,18 @@ const EventsPage = () => {
       {/* End Main Section */}
 
       {/* Start About Section */}
-      <section className="mx-gutter lg:mx-gutterbig mb-12 mt-0">
-        <div className="lg:gap-x-[5vw] lg:mb-12 lg:mt-0 lg:items-center">
-          <p className="mt-0 text-center">
-            “Cosmos” unfolds the universe one creates for oneself. When there is
+      <section className="mx-gutter lg:mx-gutterbig mb-12">
+        <div className="lg:gap-x-[5vw] lg:mb-12 lg:items-center">
+          <p className="mt-0 text-center mx-3">
+            “COSMOS” unfolds the universe one creates for oneself. When there is
             no predefined purpose or meaning, the significance we attribute to
             our lives moulds itself, much like water taking the shape of its
             container. Purpose, existence, and meaning become what individuals
             craft for themselves. We are what we choose to be. Our cosmos is the
             reality that we create and live towards, the meaning we provide, and
-            what we ultimately wish to experience during our time here. We are
-            the architects, it is our theory that shapes our cosmos.
+            what we ultimately wish to experience during our time here.
+            <br />
+            We are the architects, it is our theory that shapes our cosmos.
           </p>
         </div>
       </section>
@@ -82,19 +86,12 @@ const EventsPage = () => {
       {/* Start Date and Venue Section */}
       <section className="flex flex-col lg:flex-row w-full justify-evenly">
         <div className="flex flex-col content-center item-center m-3">
-          <FontAwesomeIcon
-            icon={faCalendar}
-            size="2xl"
-            style={{ color: "#ff1414" }}
-          />
+          <FontAwesomeIcon icon={faCalendar} size="2xl" className="text-ted" />
           <p className="text-center"> November 23, 2024</p>
           <p className="text-center"> 8:00 AM onwards</p>
         </div>
-        <div className="flex flex-col content-center item-center mt-4">
-          <FontAwesomeIcon
-            icon={faLocationDot}
-            size="2xl"
-            style={{ color: "#ff1414" }}
+        <div className="flex flex-col content-center item-center m-3">
+          <FontAwesomeIcon icon={faLocationDot} size="2xl" className="text-ted"
           />
           <p className="text-center"> Bangalore Institute of Technology,</p>
           <p className="text-center">KR Road, VV Puram, Bangalore - 560094</p>
@@ -104,9 +101,10 @@ const EventsPage = () => {
 
       {/* Start Slider Section */}
       <section class="w-full my-10">
-        <h1 className="text-center">
-          Our <span className="text-ted ">Sponsors</span>
-        </h1>
+        <h2 className="text-center text-ted">
+          <span className="text-4xls lg:text-4xl text-main">Our</span>
+          <br /> Sponsors
+        </h2>
         <div className="p-0 mx-16 px-0">
           <div className="py-10 flex h-[35vh]">
             {sponsorImages.map((img, index) => {
