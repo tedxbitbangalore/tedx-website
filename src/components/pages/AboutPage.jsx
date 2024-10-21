@@ -2,26 +2,21 @@ import React from "react";
 
 const AboutPage = () => {
   return (
-    <div className="mt-16 mx-gutter lg:mx-64 mb-12  ">
-      {/* About Tedx Start */}
+    <div className="mt-16 mx-gutter lg:mx-64 mb-12">
       <section>
         <h2 className="lg:text-center lg:my-0 lg:mb-8">
-          About{" "}
-          <span className="text-ted underline">
-            <a href="https://www.ted.com/tedx">TEDx</a>
-          </span>
+          About <span className="text-ted">TEDx</span>
+          BITBangalore
         </h2>
-        <p className="my-4">
+        <p className="mt-4 mb-10">
           In the spirit of ideas worth spreading,{" "}
           <span classname="text-ted">TED</span> has created a program called{" "}
           <span className="text-ted">TEDx</span>.{" "}
           <span className="text-ted">TEDx </span> is a program of local,
           self-organized events that bring people together to share a{" "}
           <span classname="text-ted">TED</span>-like experience. Our event is
-          called TEDxBitBangalore, where
-          <br />
-          <span className="text-ted">x</span> = independently organized{" "}
-          <span classname="text-ted">TED</span>
+          called TEDxBitBangalore, where <span className="text-ted">x</span> =
+          independently organized <span classname="text-ted">TED</span>
           event. At our <span className="text-ted">TEDxBitBangalore</span> event
           INSIGHTX, <span classname="text-ted">TED</span> Talks video and live
           speakers will combine to spark deep discussion and connection in a
@@ -32,8 +27,6 @@ const AboutPage = () => {
           self-organized.
         </p>
       </section>
-      {/* About Tedx End */}
-      {/* About Ted Start */}
       <section>
         <h2 className="lg:text-center lg:my-8">
           About <span className="text-ted">TED</span>
@@ -125,7 +118,7 @@ const AboutPage = () => {
           </a>
           .
         </p>
-        <p>
+        <p className="mb-10">
           Follow <span classname="text-ted">TED</span> on{" "}
           <a className="underline" href="http://twitter.com/TEDTalks">
             Twitter
@@ -147,9 +140,32 @@ const AboutPage = () => {
           </a>
           .
         </p>
-        <br />
       </section>
-      {/* About Ted End */}
+      <section>
+        <h2 className="lg:text-center lg:my-0 lg:mb-8">
+          About <span className="text-ted">TEDx</span>
+        </h2>
+        <p className="mt-4 mb-16">
+          In the spirit of ideas worth spreading,{" "}
+          <span classname="text-ted">TED</span> has created a program called{" "}
+          <span className="text-ted underline">
+            <a href="https://www.ted.com/tedx">TEDx</a>
+          </span>
+          . <span className="text-ted">TEDx </span> is a program of local,
+          self-organized events that bring people together to share a{" "}
+          <span classname="text-ted">TED</span>-like experience. Our event is
+          called TEDxBitBangalore, where <span className="text-ted">x</span> =
+          independently organized <span classname="text-ted">TED</span>
+          event. At our <span className="text-ted">TEDxBitBangalore</span> event
+          INSIGHTX, <span classname="text-ted">TED</span> Talks video and live
+          speakers will combine to spark deep discussion and connection in a
+          small group. The <span classname="text-ted">TED</span> Conference
+          provides general guidance for the{" "}
+          <span className="text-ted">TEDx </span> program, but individual{" "}
+          <span className="text-ted">TEDx </span> events, including ours, are
+          self-organized.
+        </p>
+      </section>
     </div>
   );
 };
