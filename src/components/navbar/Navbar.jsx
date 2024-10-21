@@ -52,7 +52,7 @@ const Navbar = () => {
         </div>
         <div
           id="navbar-collapse-with-animation"
-          class="hs-collapse lg:h-full hidden overflow-hidden transition-all duration-300 basis-full grow lg:block max-md:bg-invert max-md:text-invert"
+          class="hs-collapse lg:h-full hidden overflow-hidden transition-all duration-300 basis-full grow lg:block max-md:bg-black"
         >
           <div class="flex flex-col lg:h-full gap-x-0 lg:flex-row lg:items-stretch lg:justify-end lg:gap-y-0 lg:mt-0 lg:pl-7 ">
             <NavbarButton to="/home">Home</NavbarButton>
