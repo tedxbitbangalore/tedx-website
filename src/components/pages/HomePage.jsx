@@ -17,10 +17,10 @@ import speakerImages from "../../resources/images/speakers/getSpeakerImages";
 const EventsPage = () => {
   return (
     <div>
-      <section className="flex flex-col">
-        <div className="w-full lg:h-screen lg:w-full items-center flex radial-bg-red-black">
+      <section className="flex flex-col lg:justify-center">
+        <div className="lg:h-screen lg:w-full items-center flex radial-bg-red-black">
           <div className="lg:order-1 lg:pb-20 text-center items-center mx-auto">
-            <p className="text-center text-2xl mb-16">UPCOMING</p>
+            <p className="text-center lg:mb-16 mb-8 lg:mt-0 mt-6">UPCOMING</p>
             <img
               src={logobg}
               alt="Insightx logo"
@@ -30,7 +30,7 @@ const EventsPage = () => {
             />
             <Link
               to={"/register"}
-              className="text-xl text-white bg-ted hover:bg-red-700 focus:ring-black-300 font-medium text-sm px-5 py-2.5 dark:bg-black-600 dark:hover:bg-black-700 focus:outline-none dark:focus:ring-black-800"
+              className="text-white bg-ted hover:bg-red-700 focus:ring-black-300 font-medium px-5 py-2.5 dark:bg-black-600 dark:hover:bg-black-700 focus:outline-none dark:focus:ring-black-800"
             >
               Buy Tickets Now!
             </Link>
@@ -54,7 +54,7 @@ const EventsPage = () => {
       {/* Start About Section */}
       <section className="mx-gutter lg:mx-gutterbig mb-12">
         <div className="lg:gap-x-[5vw] lg:mb-12 lg:items-center">
-          <p className="mt-0 text-center mx-3">
+          <p className="mt-10 lg:mt-0 text-center mx-3">
             “COSMOS” unfolds the universe one creates for oneself. When there is
             no predefined purpose or meaning, the significance we attribute to
             our lives moulds itself, much like water taking the shape of its
@@ -91,7 +91,10 @@ const EventsPage = () => {
           <p className="text-center"> 8:00 AM onwards</p>
         </div>
         <div className="flex flex-col content-center item-center m-3">
-          <FontAwesomeIcon icon={faLocationDot} size="2xl" className="text-ted"
+          <FontAwesomeIcon
+            icon={faLocationDot}
+            size="2xl"
+            className="text-ted"
           />
           <p className="text-center"> Bangalore Institute of Technology,</p>
           <p className="text-center">KR Road, VV Puram, Bangalore - 560094</p>
@@ -105,20 +108,21 @@ const EventsPage = () => {
           <span className="text-4xls lg:text-4xl text-main">Our</span>
           <br /> Sponsors
         </h2>
-        <div className="p-0 mx-16 px-0">
-          <div className="py-10 flex h-[35vh]">
+        <div className="py-10 mx-16 px-0">
+          <div className="grid grid-cols-3 gap-4">
             {sponsorImages.map((img, index) => {
               return (
                 <img
-                  className="w-full"
-                  width={480}
-                  height={200}
+                  className=""
+                  width={360}
+                  height={108}
                   key={index}
                   src={img.path}
                   alt={img.name}
                 />
               );
             })}
+            
           </div>
         </div>
       </section>
