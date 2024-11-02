@@ -1,5 +1,5 @@
 import React from "react";
-import NavbarButton from "../buttons/NavbarButton";
+import NavbarLink from "../buttons/NavbarLink";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
@@ -55,11 +55,11 @@ const Navbar = () => {
           class="hs-collapse lg:h-full hidden overflow-hidden transition-all duration-300 basis-full grow lg:block max-md:bg-black"
         >
           <div class="flex flex-col lg:h-full gap-x-0 lg:flex-row lg:items-stretch lg:justify-end lg:gap-y-0 lg:mt-0 lg:pl-7 ">
-            <NavbarButton to="/home">Home</NavbarButton>
-            <NavbarButton to="/events">Events</NavbarButton>
-            <NavbarButton to="/team">Team</NavbarButton>
-            <NavbarButton to="/about">About</NavbarButton>
-            <NavbarButton to="/register">Register</NavbarButton>
+            <NavbarLink to="/home">Home</NavbarLink>
+            <NavbarLink to="/events">Events</NavbarLink>
+            <NavbarLink to="/team">Team</NavbarLink>
+            <NavbarLink to="/about">About</NavbarLink>
+            <NavbarLink to="/register">Register</NavbarLink>
           </div>
         </div>
       </nav>

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 // button in the navbar
-const NavbarButton = (props) => {
+const NavbarLink = (props) => {
   const path = useLocation().pathname;
   return (
     <Link
@@ -15,4 +15,4 @@ const NavbarButton = (props) => {
   );
 };
 
-export default NavbarButton;
+export default NavbarLink;
