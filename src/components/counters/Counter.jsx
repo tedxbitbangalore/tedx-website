@@ -44,12 +44,10 @@ const Counter = (props) => {
   });
 
   return (
-    <p className="lg:text-3xl text-1xls text-ted text-center uppercase">
-      {timerComponents.length ? (
-        <> {timerComponents} left </>
-      ) : (
-        <span>Event's Here!</span>
-      )}
+    <p className="lg:text-3xl text-1xls text-slate-100 text-center uppercase font-bold">
+      {timerComponents}
+      <br />
+      <span className="text-lg py-0">FOR</span>
     </p>
   );
 };

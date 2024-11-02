@@ -20,7 +20,14 @@ const EventsPage = () => {
       <section className="flex flex-col lg:justify-center">
         <div className="lg:h-screen lg:w-full items-center flex radial-bg-red-black">
           <div className="lg:order-1 lg:pb-20 text-center items-center mx-auto">
-            <p className="text-center lg:mb-16 mb-8 lg:mt-0 mt-6">UPCOMING</p>
+            {/* <p className="text-center lg:mb-16 mb-8 lg:mt-0 mt-6">UPCOMING</p> */}
+            <div className="mx-auto mb-16">
+              {new Date().toLocaleDateString("en-US") === "11/23/2024" ? (
+                <Counter date="11/23/2024" />
+              ) : (
+                <p className="lg:text-3xl text-1xls text-slate-100 text-center uppercase font-bold"></p>
+              )}
+            </div>
             <img
               src={logobg}
               alt="Insightx logo"
@@ -67,9 +74,6 @@ const EventsPage = () => {
           </p>
         </div>
       </section>
-      <div className="mx-auto mb-16">
-        <Counter date="11/23/2024" />
-      </div>
       {/* End About Section */}
 
       {/* Start Speaker Section */}
