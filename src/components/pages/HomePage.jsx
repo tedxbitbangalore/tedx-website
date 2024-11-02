@@ -113,20 +113,20 @@ const EventsPage = () => {
           <br /> Sponsors
         </h2>
         <div className="py-10 mx-16 px-0">
-          <div className="grid grid-cols-3 gap-4">
+          <div className="lg:grid lg:grid-cols-3 gap-4">
             {sponsorImages.map((img, index) => {
               return (
-                <img
-                  className=""
-                  width={360}
-                  height={108}
-                  key={index}
-                  src={img.path}
-                  alt={img.name}
-                />
+                <div className="lg:my-0 my-3">
+                  <img
+                    width={360}
+                    height={108}
+                    key={index}
+                    src={img.path}
+                    alt={img.name}
+                  />
+                </div>
               );
             })}
-            
           </div>
         </div>
       </section>
