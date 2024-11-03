@@ -101,6 +101,18 @@
   .radial-bg-red-black{
     background: radial-gradient(93.24% 93.24% at 30.76% 13.94%, #691809 0%, #240803 36.04%, #000000 100%);
   }
+
+  .gradient-bg {
+    background-color: transparent;
+    background-image: linear-gradient(181deg, #000 0%, #F3030388 100%);
+    transition-property: background-image;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .gradient-bg:hover {
+    background-image: linear-gradient(180deg, #000000 0%, #F30303 100%);
+  }
 }
 
 body {
