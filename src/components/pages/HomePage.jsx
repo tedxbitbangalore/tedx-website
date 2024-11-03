@@ -58,7 +58,7 @@ const HomePage = () => {
       {/* Start About Section */}
       <section className="mx-gutter lg:mx-gutterbig mb-12">
         <div className="lg:gap-x-[5vw] lg:mb-12 lg:items-center">
-          <p className="mt-10 lg:mt-0 text-center mx-3">
+          <p className="mt-10 lg:mt-0 text-center mx-auto px-5">
             “COSMOS” unfolds the universe one creates for oneself. When there is
             no predefined purpose or meaning, the significance we attribute to
             our lives moulds itself, much like water taking the shape of its
@@ -75,12 +75,15 @@ const HomePage = () => {
 
       {/* Start Speaker Section */}
       <section>
-        <PeopleTray imageArray={speakerImages} firstText="" secondText="">
-          <h2 className="text-center text-ted">
-            <span className="text-4xls lg:text-4xl text-main">The</span>
-            <br /> Speakers
-          </h2>
-        </PeopleTray>
+        <h2 className="text-center text-ted">
+          <span className="text-4xls lg:text-4xl text-main">The</span>
+          <br /> Speakers
+        </h2>
+        <div className="py-10 lg:w-10/12 mx-auto lg:grid lg:grid-cols-4 gap-4">
+          {speakerImages.map((e, i) => (
+            <SpeakerCard key={i} name={e.name} title={e.title} path={e.path} />
+          ))}
+        </div>
       </section>
       {/* End Speaker Section */}
 
