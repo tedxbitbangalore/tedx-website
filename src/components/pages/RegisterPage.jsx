@@ -51,8 +51,8 @@ const RegisterPage = () => {
             <h5 className="lg:text-5xl">REGISTER NOW</h5>
           </a>
         </div> */}
-        <div className="bg-slate-600 max-w-fit px-5 py-3 m-auto my-10">
-          <h5 className="lg:text-5xl">Registration Will Open Soon!</h5>
+        <div className="bg-ted max-w-fit px-5 py-3 m-auto my-10">
+          <h5 className="lg:text-5xl text-white">Registration Will Open Soon!</h5>
         </div>
       </section>
       <section>
