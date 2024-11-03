@@ -20,9 +20,9 @@ const HomePage = () => {
           <div className="lg:order-1 lg:pb-20 text-center items-center mx-auto">
             <div className="mx-auto mb-16">
               {new Date().toLocaleDateString("en-US") === "11/23/2024" ? (
-                <Counter date="11/23/2024" />
-              ) : (
                 <p className="lg:text-3xl text-1xls text-slate-100 text-center uppercase font-bold"></p>
+              ) : (
+                <Counter date="11/23/2024" />
               )}
             </div>
             <img
