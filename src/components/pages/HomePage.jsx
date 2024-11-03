@@ -8,7 +8,7 @@ import SpeakerCard from "../cards/SpeakerCard"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 //videos and images
-import logobg from "../../resources/images/logos/insightx/logo-insightx-nobg.webp";
+import logobg from "../../resources/images/logos/cosmos/cosmostedxw.png";
 import sponsorImages from "../../resources/images/sponsors/getSponsorImages";
 import speakerImages from "../../resources/images/speakers/getSpeakerImages";
 
@@ -18,7 +18,7 @@ const HomePage = () => {
       <section className="flex flex-col lg:justify-center">
         <div className="lg:h-screen lg:w-full items-center flex radial-bg-red-black">
           <div className="lg:order-1 lg:pb-20 text-center items-center mx-auto">
-            <div className="mx-auto mb-16">
+            <div className="mx-auto mb-8">
               {new Date().toLocaleDateString("en-US") === "11/23/2024" ? (
                 <p className="lg:text-3xl text-1xls text-slate-100 text-center uppercase font-bold"></p>
               ) : (
@@ -28,7 +28,7 @@ const HomePage = () => {
             <img
               src={logobg}
               alt="Insightx logo"
-              className="w-[80vw] mb-16"
+              className="w-[50vw] mb-16"
               width={640}
               height={100}
             />
@@ -40,18 +40,6 @@ const HomePage = () => {
             </Link>
           </div>
         </div>
-        {/* <div className="justify-center flex">
-          <a
-            href={
-              "https://docs.google.com/forms/d/1woMBHckOJqNbIuXqa2UiJD4Q_6M5EKs0cGco6IJm-fM/edit"
-            }
-            rel="noreferrer"
-            target="_blank"
-            className="lg:m-5 lg:text-2xl "
-          >
-            <u>BUY TICKETS NOW!</u>
-          </a> 
-        </div> */}
       </section>
       {/* End Main Section */}
 
