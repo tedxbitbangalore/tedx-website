@@ -14,7 +14,7 @@ import logobg from "../../resources/images/logos/insightx/logo-insightx-nobg.web
 import sponsorImages from "../../resources/images/sponsors/getSponsorImages";
 import speakerImages from "../../resources/images/speakers/getSpeakerImages";
 
-const EventsPage = () => {
+const HomePage = () => {
   return (
     <div>
       <section className="flex flex-col lg:justify-center">
@@ -142,4 +142,4 @@ const EventsPage = () => {
   );
 };
 
-export default EventsPage;
+export default HomePage;
