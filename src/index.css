@@ -35,7 +35,7 @@
 @layer components {
   /* Glowing border */
   .border-glow {
-    box-shadow: #e32020 0px 2px 15px -3px;
+    box-shadow: #e32020 0px 2px 20px -3px;
   }
 
   .glow {
