@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 //custom components
 // import PeopleTray from "../trays/PeopleTray";
-import Counter from "../counters/Counter";
 import SpeakerCard from "../cards/SpeakerCard"
 //icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -18,23 +17,23 @@ const HomePage = () => {
       <section className="flex flex-col lg:justify-center">
         <div className="lg:h-screen lg:w-full items-center flex radial-bg-red-black">
           <div className="lg:order-1 lg:pb-20 text-center items-center mx-auto">
-            <div className="mx-auto mb-8">
+            {/* <div className="mx-auto mb-8">
               {new Date().toLocaleDateString("en-US") === "11/23/2024" ? (
                 <p className="lg:text-3xl text-1xls text-slate-100 text-center uppercase font-bold"></p>
               ) : (
                 <Counter date="11/23/2024" />
               )}
-            </div>
+            </div> */}
             <img
               src={logobg}
-              alt="Insightx logo"
+              alt="cosmos logo"
               className="w-[50vw] mb-16"
               width={640}
               height={100}
             />
             <Link
               to={"/register"}
-              className="text-white bg-ted hover:bg-red-700 focus:ring-black-300 font-medium px-5 py-2.5 dark:bg-black-600 dark:hover:bg-black-700 focus:outline-none dark:focus:ring-black-800"
+              className="text-white bg-ted hover:bg-red-700 focus:ring-black-300 font-medium font-xs lg:px-5 px-2 py-2.5 dark:bg-black-600 dark:hover:bg-black-700 focus:outline-none dark:focus:ring-black-800"
             >
               Buy Tickets Now!
             </Link>
