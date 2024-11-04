@@ -45,7 +45,7 @@ const HomePage = () => {
       {/* Start About Section */}
       <section className="mx-gutter lg:mx-gutterbig mb-12">
         <div className="lg:gap-x-[5vw] lg:mb-12 lg:items-center">
-          <p className="mt-10 lg:mt-0 text-center mx-auto px-5">
+          <p className="mt-10 lg:mt-0 text-center mx-auto px-[6vw]">
             “COSMOS” unfolds the universe one creates for oneself. When there is
             no predefined purpose or meaning, the significance we attribute to
             our lives moulds itself, much like water taking the shape of its
