@@ -6,10 +6,10 @@ const SpeakerCard = ({ name, title, path }) => {
       <div className="overflow-hidden h-48 w-48 mx-auto rounded-lg border-ted border-2 hover:border-glow transition-shadow">
         <img className="" src={path} alt="" />
       </div>
-      <h5 className="mt-2 text-2xl mx-auto font-bold tracking-tight text-white text-center">
+      <h5 className="mt-2 lg:text-2xl mx-auto font-bold tracking-tight text-white text-center">
         {name}
       </h5>
-      <p className="mb-3 font-normal mx-auto text-ted text-center text-lg">
+      <p className="mb-3 font-normal mx-auto text-ted text-center lg:text-lg">
         {title}
       </p>
     </div>
