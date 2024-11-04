@@ -4,39 +4,15 @@ const AboutPage = () => {
   return (
     <div className="mt-16 mx-gutter lg:mx-64 mb-12">
       <section>
-        <h2 className="lg:text-center lg:my-0 lg:mb-8">
-          About <span className="text-ted">TEDx</span>
-          BITBangalore
-        </h2>
-        <p className="mt-4 mb-10">
-          In the spirit of ideas worth spreading,{" "}
-          <span classname="text-ted">TED</span> has created a program called{" "}
-          <span className="text-ted">TEDx</span>.{" "}
-          <span className="text-ted">TEDx </span> is a program of local,
-          self-organized events that bring people together to share a{" "}
-          <span classname="text-ted">TED</span>-like experience. Our event is
-          called TEDxBitBangalore, where <span className="text-ted">x</span> =
-          independently organized <span classname="text-ted">TED</span>
-          event. At our <span className="text-ted">TEDxBitBangalore</span> event
-          INSIGHTX, <span classname="text-ted">TED</span> Talks video and live
-          speakers will combine to spark deep discussion and connection in a
-          small group. The <span classname="text-ted">TED</span> Conference
-          provides general guidance for the{" "}
-          <span className="text-ted">TEDx </span> program, but individual{" "}
-          <span className="text-ted">TEDx </span> events, including ours, are
-          self-organized.
-        </p>
-      </section>
-      <section>
         <h2 className="lg:text-center lg:my-8">
           About <span className="text-ted">TED</span>
         </h2>
         <p className="my-4">
-          <span classname="text-ted">TED</span> is a nonprofit organization
+          <span className="text-ted">TED</span> is a nonprofit organization
           devoted to Ideas Worth Spreading, often in the form of short talks
           delivered by leading thinkers and doers. Many of these talks are given
-          at <span classname="text-ted">TED</span> Conferences, intimate{" "}
-          <span classname="text-ted">TED</span>
+          at <span className="text-ted">TED</span> Conferences, intimate{" "}
+          <span className="text-ted">TED</span>
           Salons and thousands of independently organised{" "}
           <span className="text-ted">TEDx</span> events around the world. Videos
           of these talks are made available, free, on{" "}
@@ -59,10 +35,10 @@ const AboutPage = () => {
           <a className="text-ted underline" href="http://ted.com/">
             TED.com
           </a>
-          , where new <span classname="text-ted">TED</span> Talk videos are
+          , where new <span className="text-ted">TED</span> Talk videos are
           posted daily; <a href="http://www.ted.com/tedx">TEDx</a>, which
           licenses thousands of individuals and groups to host local,
-          self-organized <span classname="text-ted">TED</span>-style events
+          self-organized <span className="text-ted">TED</span>-style events
           around the world; the{" "}
           <a className="text-ted underline" href="http://www.ted.com/fellows">
             TED Fellows
@@ -89,8 +65,8 @@ const AboutPage = () => {
           <a className="text-ted underline" href="https://tedatwork.ted.com/">
             TED@Work
           </a>{" "}
-          a program that reimagines <span classname="text-ted">TED</span> Talks
-          for workplace learning. <span classname="text-ted">TED</span> also has
+          a program that reimagines <span className="text-ted">TED</span> Talks
+          for workplace learning. <span className="text-ted">TED</span> also has
           a growing library of original podcasts, including{" "}
           <a
             className="text-ted underline"
@@ -119,7 +95,7 @@ const AboutPage = () => {
           .
         </p>
         <p className="mb-10">
-          Follow <span classname="text-ted">TED</span> on{" "}
+          Follow <span className="text-ted">TED</span> on{" "}
           <a className="underline" href="http://twitter.com/TEDTalks">
             Twitter
           </a>
@@ -147,23 +123,23 @@ const AboutPage = () => {
         </h2>
         <p className="mt-4 mb-16">
           In the spirit of ideas worth spreading,{" "}
-          <span classname="text-ted">TED</span> has created a program called{" "}
+          <span className="text-ted">TED</span> has created a program called{" "}
           <span className="text-ted underline">
             <a href="https://www.ted.com/tedx">TEDx</a>
           </span>
           . <span className="text-ted">TEDx </span> is a program of local,
           self-organized events that bring people together to share a{" "}
-          <span classname="text-ted">TED</span>-like experience. Our event is
-          called TEDxBitBangalore, where <span className="text-ted">x</span> =
-          independently organized <span classname="text-ted">TED</span>
-          event. At our <span className="text-ted">TEDxBitBangalore</span> event
-          INSIGHTX, <span classname="text-ted">TED</span> Talks video and live
-          speakers will combine to spark deep discussion and connection in a
-          small group. The <span classname="text-ted">TED</span> Conference
-          provides general guidance for the{" "}
-          <span className="text-ted">TEDx </span> program, but individual{" "}
-          <span className="text-ted">TEDx </span> events, including ours, are
-          self-organized.
+          <span className="text-ted">TED</span>-like experience. Our event,
+          called TEDxBITBangalore, where <span className="text-ted">x</span> =
+          independently organized <span className="text-ted">TED</span> {" "}
+          event, is an annual event hosted by Bangalore Institute of Technology, now in its 7th year
+          of inspiring and thought-provoking sessions. At this edition,{" "}
+          <span className="italic text-ted">Cosmos</span>,{" "}
+          TED Talks videos and live speakers combine to spark deep discussion and connection in a small group. The{" "}
+          <span className="text-ted">TED</span> Conference provides general
+          guidance for the <span className="text-ted">TEDx </span> program, but
+          individual <span className="text-ted">TEDx </span> events, including
+          ours, are self-organized.
         </p>
       </section>
     </div>
