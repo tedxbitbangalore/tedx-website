@@ -10,12 +10,12 @@ import imgContent from "../../resources/images/team/Nikita_Tenjerla@Head_Of_Cont
 
 const TeamPage = () => {
   return (
-    <div className="m-gutter lg:m-gutterbig">
+    <div className="m-gutter lg:m-gutterbig mx-auto">
       <MemberCard
         name="Dr. Aswath M. U."
         title="Principal, BIT Bangalore"
         path={imgPrincipal}
-        description={`Dr. Aswath M. U., an esteemed academician and a dedicated professional, oversees our organisation in his role as the faculty coordinator. With a passion for education and a commitment to nurturing students' talents, Dr. Ashwath plays a pivotal role in the success and growth of our club. As a principal, Dr. Ashwath possesses exceptional leadership qualities, known for his ability to inspire and motivate students to achieve their full potential. Under his guidance, the club has flourished, providing a platform for students to become the best versions of themselves and for various speakers to share ideas and innovations. With his profound knowledge, exceptional leadership skills, and unwavering support, he continues to inspire and guide students, leaving a lasting positive impact on their journeys.`}
+        description={`Dr. Aswath M. U., an esteemed academician and a dedicated professional, oversees our organisation in his role as the faculty coordinator. With a passion for education and a commitment to nurturing students' talents, he plays a pivotal role in the success and growth of our club. As the Principal, Dr. Aswath possesses exceptional leadership qualities, known for his ability to inspire and motivate students to achieve their full potential. Under his guidance, the club has flourished, providing a platform for students to become the best versions of themselves and for various speakers to share ideas and innovations. With his profound knowledge, exceptional leadership skills, and unwavering support, he continues to inspire and guide students, leaving a lasting positive impact on their journeys.`}
       />
       <MemberCardTwo
         names={["Nithyashree M.", "Khushi V."]}
