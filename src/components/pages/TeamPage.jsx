@@ -5,8 +5,8 @@ import MemberCard from "../cards/MemberCard";
 import MemberCardTwo from "../cards/MemberCardTwo";
 
 //Images Resources
-import imgPrincipal from "../../resources/images/team/core/principal.webp";
-import imgContent from "../../resources/images/team/core/Nikita_Tenjerla@Head_Of_Content.webp";
+import imgPrincipal from "../../resources/images/team/principal.webp";
+import imgContent from "../../resources/images/team/Nikita_Tenjerla@Head_Of_Content.webp";
 
 const TeamPage = () => {
   return (
