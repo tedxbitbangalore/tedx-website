@@ -11,7 +11,7 @@ const MemberCard = ({ name, title, path, description }) => {
         <p className="italic">{title}</p>
       </div>
       <div className="pt-8">
-        <p>{description}</p>
+        <p className="text-justify">{description}</p>
       </div>
     </div>
   );
