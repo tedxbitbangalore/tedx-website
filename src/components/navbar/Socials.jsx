@@ -8,7 +8,7 @@ import logo_tedx from "../../resources/images/logos/tedx/logo-TEDxBITBangalore_w
 
 const Socials = () => {
   return (
-    <div className="min-h-[35vh] px-[8vw] flex lg:flex-row justify-between flex-col">
+    <div className="min-h-[35vh] px-[5vw] flex lg:flex-row justify-between flex-col">
       <div className="lg:py-[8vh] pt-[6vh]">
         <img
           className=""
