@@ -27,7 +27,7 @@ const TeamPage = () => {
         name="Sushma J."
         title="Head of Content"
         path={imgContent}
-        description={`Under the adept leadership of the head of Content, the TEDxBITBangalore Content Team is a dedicated group crafting compelling content for TEDx events. They create thought-provoking material, pen insightful articles for the "TEDlet" newsletter, and contribute to TEDx magazines. Their skills also include crafting engaging snippets for ads and supporting marketing pitches, all in the spirit of collaboration and organization, contributing to TEDxBITBangalore's impactful experiences.`}
+        description={`Under the adept leadership of the head of Content, the TEDxBITBangalore Content Team is a dedicated group crafting compelling content for TEDx events. They create thought-provoking material, pen insightful articles for the "TEDlet" newsletter, and contribute to TEDx magazines. Their skills also include crafting engaging snippets for ads and supporting marketing pitches, all in the spirit of collaboration and organization, contributing to TEDxBITBangalore's impactful experiences.`}
       />
       <MemberCard
         name="Sourabh P."
