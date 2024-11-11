@@ -16,7 +16,7 @@ const HomePage = () => {
     <div>
       <section className="flex flex-col lg:justify-center">
         <div className="lg:h-screen lg:w-full items-center flex radial-bg-red-black">
-          <div className="lg:order-1 lg:pb-20 text-center items-center mx-auto">
+          <div className="lg:order-1 lg:pb-20 text-center flex flex-col items-center mx-auto">
             {/* <div className="mx-auto mb-8">
               {new Date().toLocaleDateString("en-US") === "11/23/2024" ? (
                 <p className="lg:text-3xl text-1xls text-slate-100 text-center uppercase font-bold"></p>
@@ -45,7 +45,7 @@ const HomePage = () => {
       {/* Start About Section */}
       <section className="mx-gutter lg:mx-gutterbig mb-12">
         <div className="lg:gap-x-[5vw] lg:mb-12 lg:items-center">
-          <p className="mt-10 lg:mt-0 text-center mx-auto px-[6vw]">
+          <p className="mt-10 lg:mt-0 text-center mx-auto lg:px-[6vw] px-5">
             “COSMOS” unfolds the universe one creates for oneself. When there is
             no predefined purpose or meaning, the significance we attribute to
             our lives moulds itself, much like water taking the shape of its
