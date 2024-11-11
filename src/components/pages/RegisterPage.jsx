@@ -40,20 +40,19 @@ const RegisterPage = () => {
   return (
     <div className="mx-gutter lg:mx-gutterbig my-5">
       <section>
-        {" "}
-        {/* <div className="bg-ted hover:bg-invert hover:text-invert transition-colors max-w-fit px-5 py-3 m-auto my-10">
+        <div className="bg-ted hover:bg-invert hover:text-invert transition-colors max-w-fit px-5 py-3 m-auto my-10">
           <a
-            href={"https://www.ted.com/"}
+            href={"https://forms.gle/sGVknNBdWum5H9v96"}
             rel="noreferrer"
             target="_blank"
             className="text-2xl"
           >
             <h5 className="lg:text-5xl">REGISTER NOW</h5>
           </a>
-        </div> */}
-        <div className="bg-ted max-w-fit px-5 py-3 m-auto my-10">
-          <h5 className="lg:text-5xl text-white">Registration Will Open Soon!</h5>
         </div>
+        {/* <div className="bg-ted max-w-fit px-5 py-3 m-auto my-10">
+          <h5 className="lg:text-5xl text-white text-center">Registrations Closed!</h5>
+        </div> */}
       </section>
       <section>
         {" "}
