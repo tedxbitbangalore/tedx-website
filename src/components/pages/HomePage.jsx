@@ -93,30 +93,31 @@ const HomePage = () => {
       </section>
       {/* End Date and Venue Section */}
 
-      {/* Start Slider Section */}
-      <section class="w-full my-10">
-        <h2 className="text-center text-ted">
-          <span className="text-4xls lg:text-4xl text-main">Our</span>
-          <br /> Sponsors
-        </h2>
-        <div className="py-10 mx-16 px-0">
-          <div className="lg:grid lg:grid-cols-3 gap-4">
-            {sponsorImages.map((img, index) => {
-              return (
-                <div className="lg:my-0 my-3">
-                  <img
-                    width={360}
-                    height={108}
-                    key={index}
-                    src={img.path}
-                    alt={img.name}
-                  />
-                </div>
-              );
-            })}
+      { sponsorImages.length > 0 &&
+        <section class="w-full my-10">
+          <h2 className="text-center text-ted">
+            <span className="text-4xls lg:text-4xl text-main">Our</span>
+            <br /> Sponsors
+          </h2>
+          <div className="py-10 mx-16 px-0">
+            <div className="lg:grid lg:grid-cols-3 gap-4">
+              {sponsorImages.map((img, index) => {
+                return (
+                  <div className="lg:my-0 my-3">
+                    <img
+                      width={360}
+                      height={108}
+                      key={index}
+                      src={img.path}
+                      alt={img.name}
+                    />
+                  </div>
+                );
+              })}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      }
       {/* End Slider Section */}
       {/* <div className="h-52 flex justify-center item-center flex flex-col">
         <p className="text-center lg:text-5xl text-3xls">
