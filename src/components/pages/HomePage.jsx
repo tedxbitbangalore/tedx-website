@@ -14,8 +14,8 @@ import speakerImages from "../../resources/images/speakers/getSpeakerImages";
 const HomePage = () => {
   return (
     <div>
-      <section className="flex flex-col lg:justify-center">
-        <div className="lg:h-screen lg:w-full items-center flex radial-bg-red-black">
+      <section className="flex flex-col">
+        <div className="pt-8 lg:w-full flex items-center radial-bg-red-black">
           <div className="lg:order-1 lg:pb-20 text-center flex flex-col items-center mx-auto">
             {/* <div className="mx-auto mb-8">
               {new Date().toLocaleDateString("en-US") === "11/23/2024" ? (
@@ -24,13 +24,15 @@ const HomePage = () => {
                 <Counter date="11/23/2024" />
               )}
             </div> */}
-            <img
-              src={logobg}
-              alt="cosmos logo"
-              className="w-[50vw] mb-16"
-              width={640}
-              height={100}
-            />
+            <div className="sm:relative top-5">
+              <img
+                src={logobg}
+                alt="cosmos logo"
+                className="w-[50vw] lg:mb-16 mb-8"
+                width={640}
+                height={100}
+              />
+            </div>
             <Link
               to={"/register"}
               className="text-white bg-ted hover:bg-red-700 focus:ring-black-300 font-medium font-xs lg:px-5 px-2 py-2.5 dark:bg-black-600 dark:hover:bg-black-700 focus:outline-none dark:focus:ring-black-800"
@@ -93,7 +95,7 @@ const HomePage = () => {
       </section>
       {/* End Date and Venue Section */}
 
-      { sponsorImages.length > 0 &&
+      {sponsorImages.length > 0 && (
         <section class="w-full my-10">
           <h2 className="text-center text-ted">
             <span className="text-4xls lg:text-4xl text-main">Our</span>
@@ -117,7 +119,7 @@ const HomePage = () => {
             </div>
           </div>
         </section>
-      }
+      )}
       {/* End Slider Section */}
       {/* <div className="h-52 flex justify-center item-center flex flex-col">
         <p className="text-center lg:text-5xl text-3xls">
