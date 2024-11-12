@@ -45,9 +45,9 @@ const RegisterPage = () => {
             href={"https://forms.gle/sGVknNBdWum5H9v96"}
             rel="noreferrer"
             target="_blank"
-            className="text-2xl"
+            className=""
           >
-            <h5 className="lg:text-5xl">REGISTER NOW</h5>
+            <h5 className="lg:text-5xl font-medium">REGISTER NOW</h5>
           </a>
         </div>
         {/* <div className="bg-ted max-w-fit px-5 py-3 m-auto my-10">
