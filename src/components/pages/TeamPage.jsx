@@ -5,10 +5,10 @@ import MemberCard from "../cards/MemberCard";
 import MemberCardTwo from "../cards/MemberCardTwo";
 
 //Images Resources
-import imgPrincipal from "../../resources/images/team/principal.webp";
-import imgContent from "../../resources/images/team/Sushma.png";
+import imgPrincipal from "../../resources/images/team/principal.jpg";
+import imgContent from "../../resources/images/team/Sushma.jpg";
 import imgCreative from "../../resources/images/team/Ganga.jpg";
-import imgTreasury from "../../resources/images/team/Shwet.webp";
+import imgTreasury from "../../resources/images/team/Shwet.jpg";
 import imgCoOrg2 from "../../resources/images/team/Khushi.jpg";
 import imgMarketing from "../../resources/images/team/Apeksha.jpg";
 import imgCuration from "../../resources/images/team/Sourabh.jpg";
