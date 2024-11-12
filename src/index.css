@@ -33,129 +33,11 @@
 }
 
 @layer components {
-  /* Rotating X bg  */
-  .bg-rotatingx {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
-  }
-
-  .bg-rotatingx::before {
-    content: " ";
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    background: #fff;
-    transform: skewX(0deg);
-    transition: 0.3s;
-  }
-
-  .bg-rotatingx:hover:before,
-  .bg-rotatingx:hover:after {
-    transform: skewX(24deg) scaleX(0.35);
-  }
-  .bg-rotatingx:before,
-  .bg-rotatingx:after {
-    @apply bg-ted;
-  }
-  .bg-rotatingx > .x2 {
-    height: 100%;
-    width: 100%;
-  }
-  .bg-rotatingx > .x2:hover:before,
-  .bg-rotatingx > .x2:hover:after {
-    transform: skewX(-24deg) scaleX(0.35);
-  }
-
-  .x2 > .content {
-    position: relative;
-    background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    z-index: 3;
-    transform: 0.5s;
-    color: #fff;
-    transition: 0.2s;
-  }
-
-  /* Rotating X bg end */
-
-  /* Sponsors slideshow */
-  @keyframes scroll {
-    0% {
-      transform: translateX(-155vw);
-    }
-    100% {
-      transform: translateX(0vw);
-    }
-  }
-  .slider {
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-  }
-  .slider::before,
-  .slider::after {
-    content: "";
-    position: absolute;
-    z-index: 2;
-  }
-  .slider::after {
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
-  }
-  .slider::before {
-    left: 0;
-    top: 0;
-  }
-  .slider .slide-track {
-    animation: scroll 10s linear infinite;
-  }
-  .slider {
-    /* width: 20%; */
-    padding: 0 4%;
-  }
-
-  @media (max-width: 480px) {
-    .slider {
-      padding: 0 3.5% !important;
-    }
-    @keyframes scroll {
-      0% {
-        transform: translateX(-310vw);
-      }
-      100% {
-        transform: translateX(0vw);
-      }
-    }
-    .slider .slide-track {
-      animation: scroll 8s linear infinite;
-    }
-  }
-  /* Sponsors slideshow end */
-
   /* Glowing border */
   .border-glow {
-    border: 1px white;
-    border-style: solid;
-    border-radius: 3px;
-    box-shadow: red 0px 0px 15px, white 0px 0px 1px, white 0px 0px 3px,
-      red 0px 0px 15px inset, white 0px 0px 1px inset, white 0px 0px 3px inset;
+    box-shadow: #e32020 0px 2px 20px -3px;
   }
-  .borderb-glow {
-    border: 2px white;
-    border-bottom-style: solid;
-    box-shadow: red 0px 0px 15px, white 0px 0px 1px 1px, white 0px 0px 3px,
-      red 0px -10px 15px -8px inset, white 0px 6px 1px -6px inset,
-      white 0px 4px 3px -6px inset;
-  }
-  /* Glowing border end*/
 
-  /* glowing text end*/
   .glow {
     color: white;
     font-weight: bold;
@@ -164,7 +46,6 @@
       -2px 2px 20px rgba(255, 0, 0, 0.5), 2px -2px 20px rgba(255, 0, 0, 0.5),
       -2px -2px 20px rgba(255, 0, 0, 0.5), 0px 0px 5px white;
   }
-  /* glowing text end*/
 
   /* glowing button */
   .glow-button {
@@ -215,77 +96,28 @@
       0 0 2.5em 2em var(--glow-spread-color),
       inset 0 0 0.5em 0.25em var(--glow-color);
   }
-}
 
-/* glowing button end*/
+  /* glowing button end*/
+  .radial-bg-red-black{
+    background: radial-gradient(93.24% 93.24% at 30.76% 13.94%, #691809 0%, #240803 36.04%, #000000 100%);
+  }
 
-/* Fonts */
-@font-face {
-  font-family: acumin-pro;
-  font-weight: 200;
-  font-stretch: normal;
-  src: url(./resources/fonts/acumin-pro-extralight-webfont.woff2)
-      format("woff2"),
-    url(./resources/fonts/acumin-pro-extralight-webfont.woff) format("woff");
-  font-display: swap;
+  .gradient-bg {
+    background-color: transparent;
+    background-image: linear-gradient(181deg, #000 0%, #F3030388 100%);
+    transition-property: background-image;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .gradient-bg:hover {
+    background-image: linear-gradient(180deg, #000000 0%, #F30303 100%);
+  }
 }
-@font-face {
-  font-family: acumin-pro;
-  font-weight: 300;
-  font-stretch: normal;
-  src: url(./resources/fonts/acumin-pro-light-webfont.woff2) format("woff2"),
-    url(./resources/fonts/acumin-pro-light-webfont.woff) format("woff");
-  font-display: swap;
-}
-@font-face {
-  font-family: acumin-pro;
-  font-weight: 400;
-  font-stretch: normal;
-  src: url(./resources/fonts/acumin-pro-webfont.woff2) format("woff2"),
-    url(./resources/fonts/acumin-pro-webfont.woff) format("woff");
-  font-display: swap;
-}
-@font-face {
-  font-family: acumin-pro;
-  font-weight: 800;
-  src: url(./resources/fonts/acumin-pro-black-webfont.woff2) format("woff2"),
-    url(./resources/fonts/acumin-pro-black-webfont.woff) format("woff");
-  font-display: swap;
-}
-@font-face {
-  font-family: acumin-pro;
-  font-weight: 900;
-  src: url(./resources/fonts/acumin-pro-black-webfont.woff2) format("woff2"),
-    url(./resources/fonts/acumin-pro-black-webfont.woff) format("woff");
-  font-display: swap;
-}
-@font-face {
-  font-family: acumin-pro;
-  font-weight: 800;
-  font-stretch: expanded;
-  src: url(./resources/fonts/acumin-pro-wide-black-webfont.woff2)
-      format("woff2"),
-    url(./resources/fonts/acumin-pro-wide-black-webfont.woff) format("woff");
-  font-display: swap;
-}
-/* Main Font */
-@font-face {
-  font-family: acumin-pro;
-  font-weight: 900;
-  font-stretch: expanded;
-  src: url(./resources/fonts/acumin-pro-wide-ultrablack-webfont.woff2)
-      format("woff2"),
-    url(./resources/fonts/acumin-pro-wide-ultrablack-webfont.woff)
-      format("woff");
-  font-display: swap;
-}
-/* Fonts end*/
 
 body {
   margin: 0;
-  font-family: acumin-pro, sans-serif;
-  font-weight: 900;
-  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   @apply bg-main text-main;
@@ -294,4 +126,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+p {
+  font-weight: 400;
 }

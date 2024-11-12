@@ -40,23 +40,19 @@ const RegisterPage = () => {
   return (
     <div className="mx-gutter lg:mx-gutterbig my-5">
       <section>
-        {" "}
-        <h3 className="text-center">
-          Register Now! <span className="text-ted "></span>
-        </h3>
-        {/* <div className="bg-ted hover:bg-invert hover:text-invert max-w-fit px-5 py-3 m-auto my-10">
+        <div className="bg-ted hover:bg-invert hover:text-invert transition-colors max-w-fit px-5 py-3 m-auto my-10">
           <a
-            href={"https://forms.gle/p8khgTSU9Pov9EhHA"}
+            href={"https://forms.gle/sGVknNBdWum5H9v96"}
             rel="noreferrer"
             target="_blank"
-            className="text-2xl"
+            className=""
           >
-            <h5 className="lg:text-5xl">Registration</h5>
+            <h5 className="lg:text-5xl font-medium">REGISTER NOW</h5>
           </a>
-        </div> */}
-        <div className="bg-slate-600 max-w-fit px-5 py-3 m-auto my-10">
-          <h5 className="lg:text-5xl">Registration Closed</h5>
         </div>
+        {/* <div className="bg-ted max-w-fit px-5 py-3 m-auto my-10">
+          <h5 className="lg:text-5xl text-white text-center">Registrations Closed!</h5>
+        </div> */}
       </section>
       <section>
         {" "}

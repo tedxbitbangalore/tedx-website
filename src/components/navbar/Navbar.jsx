@@ -1,14 +1,16 @@
 import React from "react";
-import NavbarButton from "../buttons/NavbarButton";
+import NavbarLink from "../buttons/NavbarLink";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
+// import logoWhite from "../../resources/images/logos/tedx/logo-TEDxBITBangalore_white.webp";
+
 const Navbar = () => {
   return (
-    <header class="flex flex-wrap lg:justify-start lg:flex-nowrap z-50 w-full bg-main text-lg lg:py-0 sticky top-0 h-[14vh]">
+    <header class="flex flex-wrap lg:justify-start lg:flex-nowrap z-50 w-full bg-main text-lg lg:py-0 sticky top-0 h-[12vh]">
       <nav
-        class="relative w-full  lg:px-4 lg:flex lg:items-center lg:justify-between"
+        class="relative w-full lg:px-4 lg:flex lg:items-center lg:justify-between"
         aria-label="Global"
       >
         <div class="flex items-center justify-between px-4">
@@ -16,8 +18,9 @@ const Navbar = () => {
             <TEDxLogo />
           </div> */}
           <Link className="flex-none" to="/">
+            {/* <img src={logoWhite} alt="TEDxBITBangalore logo" /> */}
             <h1 className="text-xls lg:text-4xl">
-              <span className="text-ted">
+              <span className="text-ted font-extrabold">
                 TED<sup>x</sup>
               </span>
               BITBangalore
@@ -49,14 +52,14 @@ const Navbar = () => {
         </div>
         <div
           id="navbar-collapse-with-animation"
-          class="hs-collapse lg:h-full hidden overflow-hidden transition-all duration-300 basis-full grow lg:block max-md:bg-invert max-md:text-invert"
+          class="hs-collapse lg:h-full hidden overflow-hidden transition-all duration-300 basis-full grow lg:block max-md:bg-black"
         >
           <div class="flex flex-col lg:h-full gap-x-0 lg:flex-row lg:items-stretch lg:justify-end lg:gap-y-0 lg:mt-0 lg:pl-7 ">
-            <NavbarButton to="/home">Home</NavbarButton>
-            <NavbarButton to="/event">Event</NavbarButton>
-            <NavbarButton to="/team">Team</NavbarButton>
-            <NavbarButton to="/about">About</NavbarButton>
-            <NavbarButton to="/register">Register</NavbarButton>
+            <NavbarLink to="/home">Home</NavbarLink>
+            {/* <NavbarLink to="/events">Events</NavbarLink> */}
+            <NavbarLink to="/team">Team</NavbarLink>
+            <NavbarLink to="/about">About</NavbarLink>
+            <NavbarLink to="/register">Register</NavbarLink>
           </div>
         </div>
       </nav>
