@@ -49,7 +49,7 @@ const TeamPage = () => {
           Dedicated to their craft, they invest tireless effort in idea exploration, concept development, prototyping, refinement, and the invaluable feedback loop. It is their magic that gives each event its distinct pulse, weaving together the threads of imagination to create moments that linger in the memory, inspiring and illuminating.`}
       />
       <MemberCard
-        name="Apeksha B. A."
+        name="Apeksha A."
         title="Head of Marketing"
         path={imgMarketing}
         description={`The Marketing Team plays a pivotal role in expanding the reach of our creations to a wider audience. Under the leadership of the head , they function as an attractive force, much like a beautiful flower that draws in a friendly crowd with its appealing nectar. Through their carefully crafted campaigns, they skillfully orchestrate engagement, directing our audience to the most compelling aspects of our event. Acting as a persuasive link between our visions and the outside world, they infuse our creations with energy and enthusiasm, making them engaging and impactful.`}
