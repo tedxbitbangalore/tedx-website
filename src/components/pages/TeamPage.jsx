@@ -5,14 +5,14 @@ import MemberCard from "../cards/MemberCard";
 import MemberCardTwo from "../cards/MemberCardTwo";
 
 //Images Resources
-import imgPrincipal from "../../resources/images/team/principal.jpg";
-import imgContent from "../../resources/images/team/Sushma.jpg";
-import imgCreative from "../../resources/images/team/Ganga.jpg";
-import imgTreasury from "../../resources/images/team/Shwet.jpg";
-import imgCoOrg2 from "../../resources/images/team/Khushi.jpg";
-import imgMarketing from "../../resources/images/team/Apeksha.jpg";
-import imgCuration from "../../resources/images/team/Sourabh.jpg";
-import imgCoOrg1 from "../../resources/images/team/Nithyashree.jpg";
+import imgPrincipal from "../../resources/images/team/principal.webp";
+import imgContent from "../../resources/images/team/Sushma.webp";
+import imgCreative from "../../resources/images/team/Ganga.webp";
+import imgTreasury from "../../resources/images/team/Shwet.webp";
+import imgCoOrg2 from "../../resources/images/team/Khushi.webp";
+import imgMarketing from "../../resources/images/team/Apeksha.webp";
+import imgCuration from "../../resources/images/team/Sourabh.webp";
+import imgCoOrg1 from "../../resources/images/team/Nithyashree.webp";
 
 const TeamPage = () => {
   return (
@@ -27,7 +27,7 @@ const TeamPage = () => {
         names={["Nithyashree M.", "Khushi V."]}
         titles={["Co-Organiser", "Co-Organiser"]}
         paths={[imgCoOrg1, imgCoOrg2]}
-        description={`The creative architects behind our transformative gatherings. The driving forcea that are responsible for capturing the spirit of TED in the event by sparking community connections and inspiring ideas that change perspectives. They are the guiding hands, uniting impassioned individuals to create a powerful, unforgettable event. In essence, they are the catalyst for innovation and positive change.`}
+        description={`The creative architects behind our transformative gatherings. The driving forces that are responsible for capturing the spirit of TED in the event by sparking community connections and inspiring ideas that change perspectives. They are the guiding hands, uniting impassioned individuals to create a powerful, unforgettable event. In essence, they are the catalyst for innovation and positive change.`}
       />
       <MemberCard
         name="Sushma J."
