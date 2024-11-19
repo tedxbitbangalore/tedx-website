@@ -105,13 +105,14 @@ const HomePage = () => {
             <div className="lg:grid lg:grid-cols-3 gap-4">
               {sponsorImages.map((img, index) => {
                 return (
-                  <div className="lg:my-0 my-3">
+                  <div className="lg:my-0 my-3 mx-auto">
                     <img
-                      width={360}
+                      width={240}
                       height={108}
                       key={index}
                       src={img.path}
                       alt={img.name}
+                      className="p-4"
                     />
                   </div>
                 );
